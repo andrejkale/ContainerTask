@@ -57,7 +57,7 @@ namespace ContainerClass
 
         public override string? ToString()
         {
-            return "Student " + " " + FirstName + " " + LastName + " " + Subject + " ";
+            return "Student " + " " + FirstName + " " + LastName + " " + Subject + " " + "Average mark = ";
         }
     }
 }

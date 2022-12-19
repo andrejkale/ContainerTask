@@ -30,7 +30,7 @@ namespace ContainerClass
         }
 
         public static void AddMark(Student student, int mark)
-        {   if (mark >= 0 && mark <= 5)
+        {   if (mark >= 0 && mark <= 5 && student != null)
             {
                 student.Mark = mark;
             }
@@ -44,7 +44,12 @@ namespace ContainerClass
         public static void PrintStudents()
         {
             students.ForEach(student => Console.WriteLine(student + " " + CalculateAveregeMark(student)));
-            
+            Console.WriteLine();            
+        }
+
+        public static void RemoveStudent(Student student) 
+        { 
+            students.Remove(student);
         }
 
         public override string? ToString()
