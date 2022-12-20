@@ -22,7 +22,9 @@ StudentsMarksLog.AddMark(sergii, 5);
 
 StudentsMarksLog.AddMark(aleksii, 5);
 StudentsMarksLog.AddMark(aleksii, 4);
+StudentsMarksLog.AddMark(aleksii, 3);
 
+StudentsMarksLog.AddMark(vasiliy, 1);
 StudentsMarksLog.AddMark(vasiliy, 1);
 
 StudentsMarksLog.PrintStudents();

@@ -10,7 +10,7 @@ namespace ContainerClass
    public class StudentsMarksLog
     {   
        private static List<Student> students = new List<Student>();
-        public static Student CreateStudent(string firstName, string lastName, string subject, int mark)
+        public static Student CreateStudent(string firstName, string lastName, string subject, double mark)
         {
             return (new Student(firstName, lastName, subject, mark));
             
@@ -29,7 +29,7 @@ namespace ContainerClass
             }
         }
 
-        public static void AddMark(Student student, int mark)
+        public static void AddMark(Student student, double mark)
         {   if (mark >= 0 && mark <= 5 && student != null)
             {
                 student.Mark = mark;
@@ -52,9 +52,9 @@ namespace ContainerClass
             students.Remove(student);
         }
 
-        public override string? ToString()
+        /*public override string? ToString()
         {
             return base.ToString();
-        }
+        }*/
     }
 }

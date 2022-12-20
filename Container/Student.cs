@@ -12,10 +12,10 @@ namespace ContainerClass
         private string FirstName;
         private string LastName;
         private string Subject;
-        private List<int> Marks = new List<int>();
+        private List<double> Marks = new List<double>();
 
 
-        public Student(string firstName, string lastName, string subject, int mark)
+        public Student(string firstName, string lastName, string subject, double mark)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -30,7 +30,7 @@ namespace ContainerClass
             }
         }
 
-        public int Mark
+        public double Mark
         {
             get
             {                   
@@ -48,7 +48,7 @@ namespace ContainerClass
         public string Name
         { get { return FirstName; } }
 
-        public List<int> MarksGet
+        public List<double> MarksGet
         { 
            get => Marks;
         }
